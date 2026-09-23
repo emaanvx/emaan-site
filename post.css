@@ -1,0 +1,10 @@
+/* Long-form reading layout. Serif body, narrow measure. */
+.post-body{padding:var(--gap) 0}
+.post-body article{max-width:38rem}
+.post-body time{font-family:var(--mono);font-size:.74rem;color:var(--paper-faint);letter-spacing:.05em}
+.post-body h1{font-size:clamp(2rem,6vw,3.1rem);margin:.6rem 0 1.4rem;max-width:20ch}
+.post-body p{font-family:var(--serif);font-size:1.22rem;line-height:1.55;color:var(--paper);margin:0 0 1.2rem}
+.post-body .lede{color:var(--paper-dim)}
+.post-body h2{font-size:1.6rem;margin:2.4rem 0 .8rem}
+.post-body blockquote{border-left:2px solid var(--signal);margin:1.8rem 0;padding-left:1.2rem;color:var(--paper-dim)}
+.post-body img{border:var(--rule);margin:1.8rem 0}
