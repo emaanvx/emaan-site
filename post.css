@@ -8,3 +8,11 @@
 .post-body h2{font-size:1.6rem;margin:2.4rem 0 .8rem}
 .post-body blockquote{border-left:2px solid var(--signal);margin:1.8rem 0;padding-left:1.2rem;color:var(--paper-dim)}
 .post-body img{border:var(--rule);margin:1.8rem 0}
+
+.post-body .lede{color:var(--paper-dim)}
+.post-body li{font-family:var(--serif);font-size:1.22rem;line-height:1.5;color:var(--paper)}
+.post-body h1+.lede{margin-top:-.4rem}
+.plain{display:grid;gap:1rem;margin:0 0 1.2rem}
+.plain li{padding-left:1rem;border-left:2px solid var(--line)}
+.plain strong{color:var(--paper)}
+.rule{border:0;border-top:var(--rule);margin:3.5rem 0}
