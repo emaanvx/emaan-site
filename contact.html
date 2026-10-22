@@ -3,11 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Emaan Khan</title>
-<meta name="description" content="Send the work you are least happy with and one sentence on why. One next step, no form to fill in first.">
-<meta property="og:title" content="Contact — Emaan Khan">
-<meta property="og:description" content="Book a call, or send an email.">
-<meta property="og:type" content="website">
+<title>Contact — Creative director Khan</title>
+<meta name="description" content="Tell me what you're working on and where you want it to go.">
+<meta name="theme-color" content="#0c0c0d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,8 +17,8 @@
 
 <header class="header" id="top">
   <div class="wrap header-in">
-    <a class="wordmark" href="./">Emaan&nbsp;Khan</a>
-    <p class="tagline">Creative director. Short-form video, and nothing else.</p>
+    <a class="wordmark" href="./">Creative director <b>Khan</b></a>
+    <p class="tagline">Short-form video</p>
   </div>
 </header>
 
@@ -29,85 +27,66 @@
     <ul>
       <li><a href="./">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="./#direction">Direction</a></li>
-      <li><a href="./#mentorship">Mentorship</a></li>
       <li><a href="contact.html" aria-current="page">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<main id="main">
-
-<section class="section" style="border-top:0">
+<main class="bare" id="main">
   <div class="wrap">
+    <h1>Let's talk</h1>
 
-    <h1>One next step.</h1>
-    <p class="lede">
-      Send me the work you're least happy with and one sentence on why. If I think
-      I can help, we'll talk. If I don't, I'll say so, and that'll be the more
-      useful answer. Nothing to fill in before you see a real time slot.
-    </p>
-
-    <p class="cta-row">
-      <a class="btn btn-lg" href="mailto:emaan@venture-x.ca?subject=Work%20%E2%80%94%20and%20what%27s%20wrong%20with%20it" data-cta="contact">Send me the work</a>
-      <span class="cta-note">One email. No form, no funnel.</span>
-    </p>
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-        <h2 class="about-h">Email</h2>
-        <p><a class="link" href="mailto:emaan@venture-x.ca">emaan@venture-x.ca</a></p>
-        <p class="dim">I read everything. I answer most of it, usually late. A link beats a description.</p>
+    <form class="lead" id="leadform" novalidate>
+      <div>
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
       </div>
-
-      <div class="contact-card">
-        <h2 class="about-h">Social</h2>
-        <ul class="contact-list">
-          <li><a class="link" href="https://instagram.com/emaanakh">Instagram &mdash; @emaanakh</a></li>
-          <li><a class="link" href="https://tiktok.com/@emaanakh">TikTok &mdash; @emaanakh</a></li>
-        </ul>
-        <p class="dim">DMs are open. The work is on both.</p>
+      <div>
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
       </div>
-
-      <div class="contact-card">
-        <h2 class="about-h">Enquiries</h2>
-        <p>Brand and project work: same address, subject line <em>Project</em>.</p>
-        <p class="dim">Tell me the format, the timeline and the decision you're stuck on. I'll tell you quickly whether it's mine.</p>
+      <div>
+        <label for="f-link">Link to your work</label>
+        <input id="f-link" name="link" type="url" placeholder="https://">
       </div>
-
-    </div>
-
-    <h2 class="about-h" style="margin-top:3rem">Before you write</h2>
-    <p class="dim" style="max-width:58ch">
-      Three things make a first message easy to answer: a link to the work, what
-      you're stuck on, and what you want to be making in six months. Don't tidy it
-      up first &mdash; the unfinished version is the useful one.
-    </p>
-    <p class="dim" style="max-width:58ch">
-      I take on a few people at a time, so there isn't always room. If there
-      isn't, I'll tell you rather than leaving you waiting.
-    </p>
-
+      <div>
+        <label for="f-msg">What are you making?</label>
+        <textarea id="f-msg" name="message" required></textarea>
+      </div>
+      <button class="btn" type="submit">Send</button>
+      <p class="cta-note" id="formnote" role="status"></p>
+    </form>
   </div>
-</section>
-
 </main>
 
 <footer class="footer">
   <div class="wrap footer-in">
-    <ul class="social">
-      <li><a href="https://instagram.com/emaanakh">Instagram</a></li>
-      <li><a href="https://tiktok.com/@emaanakh">TikTok</a></li>
-      <li><a href="mailto:emaan@venture-x.ca">Email</a></li>
-    </ul>
     <ul class="policies">
       <li><a href="policies.html#social">House rules</a></li>
       <li><a href="policies.html#ai">How I use AI</a></li>
     </ul>
-    <p class="colophon"><span class="tc">&copy; 2026</span> Emaan Khan &middot; Toronto</p>
+    <p class="colophon"><span class="tc">&copy; 2026</span> Emaan Khan</p>
   </div>
 </footer>
 
+<script>
+(function(){
+  // No backend on a static site: the form composes the message and hands it to the
+  // sender's own mail client, so no address is printed on the page.
+  // SWAP: point f.action at a Formspree / Netlify Forms endpoint for a real
+  // database capture (Assignment 2 goal: "create lead form and database").
+  var f=document.getElementById('leadform'), note=document.getElementById('formnote');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    if(!f.checkValidity()){ note.textContent='Name, email and a message, please.'; f.reportValidity(); return; }
+    var v=function(id){return (document.getElementById(id).value||'').trim()};
+    var body='Name: '+v('f-name')+'\nEmail: '+v('f-email')+'\nWork: '+(v('f-link')||'-')+'\n\n'+v('f-msg');
+    note.textContent='Opening your email app...';
+    window.location.href='mailto:emaan@venture-x.ca'
+      +'?subject='+encodeURIComponent('New enquiry - '+v('f-name'))
+      +'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>
