@@ -205,6 +205,14 @@ h1 em{font-style:italic;color:var(--paper-dim)}
 .planned .status{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--paper-faint)}
 
+/* published rows are links and read at full strength */
+.planned a.post-row{text-decoration:none;color:inherit}
+.planned a.post-row h3{color:var(--paper)}
+.planned a.post-row p{color:var(--paper-dim)}
+.planned a.post-row .status{color:var(--signal)}
+.planned a.post-row:hover h3{color:var(--signal)}
+.planned a.post-row:focus-visible{outline:2px solid var(--signal);outline-offset:4px}
+
 /* ── mentorship: the offer ──────────────────────────────────── */
 .mentorship{background:var(--ink-2)}
 .ment-grid{display:grid;gap:2.5rem}
