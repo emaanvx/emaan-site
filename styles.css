@@ -1,22 +1,24 @@
 /* Emaan Khan — personal site
-   Direction: cutting room. Near-black canvas, editorial serif headlines,
-   monospace timecode as the only ornament. Work first, one action.
-   Mobile-first; every rule below 720px is the base case. */
+   Brand: EK PB Brand Identity Book (draft 06). Racing green ground, gold accent,
+   Archivo throughout — Archivo Black for display, Archivo for everything else.
+   One typeface by decision, not by accident. Mobile-first.
+   Palette and type locked in ~/Documents/VentureX/Clients/EK PB/EK PB - Brand Identity/BRAND.md */
 
 :root{
-  --ink:#0c0c0d;
-  --ink-2:#141416;
-  --line:#26262a;
-  --paper:#f2efe9;
-  --paper-dim:#a8a49c;
-  --paper-faint:#6f6c66;
-  --brg:#0A3B2A;             /* British racing green — the fill */
-  --brg-lift:#0F5238;        /* hover */
-  --signal:#2F8F5B;          /* the accent: rules, numerals, marks */
-  --signal-dim:#1C6B43;
-  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
-  --sans:"Public Sans",system-ui,-apple-system,sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+  --ink:#06241A;             /* deep green — the ground */
+  --ink-2:#0C3B2A;           /* racing green — raised panels */
+  --line:rgba(200,160,50,.28);
+  --paper:#F6F4EE;
+  --paper-dim:#CFCEC4;
+  --paper-faint:#9E9A8C;
+  --brg:#0C3B2A;             /* racing green — the fill */
+  --brg-lift:#12513A;        /* hover */
+  --signal:#C8A032;          /* gold: rules, numerals, marks */
+  --signal-dim:#8A6F23;
+  --signal-br:#E3C25C;       /* gold, bright — links on green */
+  --serif:"Archivo Black","Helvetica Neue",Arial,sans-serif;   /* display */
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;          /* body */
+  --mono:"Archivo","Helvetica Neue",Arial,sans-serif;          /* utility, letterspaced */
   --gap:clamp(2.5rem,7vw,5.5rem);
   --rule:1px solid var(--line);
 }
@@ -31,7 +33,7 @@ body{
 }
 img,video{max-width:100%;display:block;height:auto}
 a{color:inherit}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.05;margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.02;margin:0;text-transform:uppercase}
 p{margin:0 0 1rem}
 ul{margin:0;padding:0;list-style:none}
 
