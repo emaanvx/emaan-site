@@ -374,3 +374,15 @@ html,body{overflow-x:clip}
 @media (min-width:900px){.hx-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}}
 @media (max-width:600px){.hx-title{font-size:clamp(2.4rem,11.5vw,3.4rem)}.fl-tag{right:6%}.hx-collage{height:22rem;max-width:19rem}}
 .fx-word{font-size:clamp(3rem,14.6vw,10.6rem);text-align:center}
+/* phones: calm the collage, no parallax drift over text */
+@media (max-width:899px){
+  .fl{transform:rotate(var(--rot,0deg))!important}
+  .fl-tag{transform:rotate(-6deg)!important}
+  .hx-collage{margin-top:.5rem}
+  .fl-main{left:18%;top:0;width:64%}
+  .fl-a{left:2%;bottom:0;width:40%}
+  .fl-b{right:2%;top:6%;width:32%}
+  .rx-ghost{transform:translateY(-50%)!important;font-size:11rem}
+  body::after{animation:none}
+}
+@media (max-width:899px){.reel-player{max-width:16.5rem;transform:rotate(-2deg)}}

@@ -6,7 +6,7 @@
     var onScroll=function(){bar.classList.toggle('scrolled',scrollY>24)};
     onScroll();addEventListener('scroll',onScroll,{passive:true});
   }
-  if(reduce)return;
+  if(reduce||innerWidth<900)return;
   var items=[].slice.call(document.querySelectorAll('[data-speed]'));
   if(!items.length)return;
   var ticking=false;
