@@ -386,3 +386,11 @@ html,body{overflow-x:clip}
   body::after{animation:none}
 }
 @media (max-width:899px){.reel-player{max-width:16.5rem;transform:rotate(-2deg)}}
+/* about: social pills */
+.social-pills{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 0}
+.pill,.prose .pill{display:inline-flex;align-items:center;gap:.55rem;padding:.65rem 1.1rem;border-radius:999px;background:var(--green-deep);color:var(--linen);text-decoration:none!important;font-family:var(--display);font-weight:800;font-size:1rem;transition:background .2s,transform .2s}
+.pill svg{width:1.15rem;height:1.15rem;color:var(--gold-br)}
+.pill span{font-family:var(--body);font-weight:500;color:#AEB9B1;font-size:.9rem}
+.pill:hover,.prose .pill:hover{background:var(--gold);color:var(--green-deep);transform:translateY(-2px)}
+.pill:hover svg,.pill:hover span{color:var(--green-deep)}
+.prose .cred{text-decoration:none!important;color:inherit;background:#fff}.prose .cred:hover{background:var(--linen-2)}
